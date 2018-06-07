@@ -4,7 +4,7 @@ Here's how to use it
 
 ### include("main.php"); // Do keep the files required by main.php (timezone.php)
 
-Pass the Time in String format exactly in the form > **HH:MM (24 hour clock : Seconds not included ) !! AM/PM will not work !!**
+Pass the Time in String format exactly in the form > **HH:MM (24 hour clock :Seconds not included) !!AM/PM will not work!!**
 
 NOTE :Timezone sent is accurate to **+-15** Minutes of the current time passed to the function
 
