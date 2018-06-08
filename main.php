@@ -12,7 +12,7 @@
 
 	Will lead to the faulty working of the function and it may not send timezone to you 
 	Since this library works on DOM Parsing of Web Pages
-	Althouhg we will try to keep this library updated
+	Although we will try to keep this library updated
 
 	And Thanks to the site https://www.timeanddate.com/ for being there to find the timezones 
 
