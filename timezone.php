@@ -75,7 +75,7 @@ function get_time_zone($hour, $minute) // Main function to dom parse
 				}
             }
                
-			echo $hour_place." $minute_place<br>";
+			// echo $hour_place." $minute_place<br>";
             
 			if ($hour_place == $hour && ( $minute_place!='am' && $minute_place!='AM' )) 
 				// If the user entered hour matches with the current city hour go ahead to match minutes
