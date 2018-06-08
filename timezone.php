@@ -67,7 +67,8 @@ function get_time_zone($hour, $minute) // Main function to dom parse
 
                 if ($hour_place=="12" && ($minute_place=="am" || $minute_place=="AM"))
                 {
-                    ;  // Do nothing 
+                    $hour_place="00"; 
+                    $minute_place = $time[3] . $time[4];  
                 }
                 else
 				{
