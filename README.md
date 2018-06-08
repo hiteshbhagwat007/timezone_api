@@ -1,5 +1,8 @@
 # Timezone Retriever 
 
+**Working Link for example**
+**https://specialdaytodaybot.000webhostapp.com/timezone/example.html**
+
 Here's how to use it
 
 ### include("main.php"); // Do keep the files required by main.php (timezone.php)
