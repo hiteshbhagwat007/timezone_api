@@ -5,7 +5,7 @@
 
 Here's how to use it
 
-### include("main.php"); // Do keep the files required by main.php (timezone.php)
+**include("main.php"); // Do keep the files required by main.php (timezone.php)**
 
 Pass the Time in String format exactly in the form >
 
