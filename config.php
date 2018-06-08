@@ -1,9 +1,9 @@
 <?php
 //The username or email address of the account.
-define('USERNAME', 'lastemailhacked@gmail.com');
+define('USERNAME', '');
  
 //The password of the account.
-define('PASSWORD', 'Wtpmjgda/11');
+define('PASSWORD', '');
  
 //Set a user agent. This basically tells the server that we are using Chrome ;)
 define('USER_AGENT', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.2309.372 Safari/537.36');
