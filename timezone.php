@@ -84,7 +84,7 @@ function get_time_zone($hour, $minute) // Main function to dom parse
                 $minute_difference =$minute_place -$minute; // find the minute difference
                 // echo $minute_difference."<br>";
 				
-                if ($minute_difference > -15 && $minute_difference < 15) 
+                if ($minute_difference > -30 && $minute_difference < 30) 
 					// compensate for server call less
                     //matches a city's exact time in range of +-15 Minutes
                 {
