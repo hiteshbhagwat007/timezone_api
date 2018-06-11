@@ -21,6 +21,6 @@ Made this project coz i didn't find one working like this and we don't even need
 
 **IMPORTANT NOTE** :Please read main.php for basic of how it's working and when it may fail to work properly
 
-**Soon this project will be made static to work on the basis of the current GMT time and the given user time using inline functions**
+**Inline functions are not a trustable method to find timezones and they may return incorrect response **
 
 Took some 12 cups of coffee to make / Buy me some :P https://paypal.me/SudhanshuR
