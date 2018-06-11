@@ -23,15 +23,16 @@ require_once('simple_html_dom.php'); // Thanks to Jose Solorzano (https://source
 $previous = " "; // Global previous varibale to store previous value of Dom tree
 
 function get_time_zone($hour, $minute) // Main function to dom parse
-{
+{   
 
-    $website      = "https://www.timeanddate.com/worldclock/full.html?sort=2"; //Website to retreive data of all cities
+    $website      = "https://www.timeanddate.com/worldclock/full.html?sort=0"; //Website to retreive data of all cities
     $timezonelink = "https://www.timeanddate.com/time/zone/"; //Website to retreive data from city
 
     $html = new simple_html_dom();
     $timezonehtml = new simple_html_dom();
     $html->load_file($website); // load the html to int $html dom tree
     $element = $html->find("td"); // td element contains all the cities with their time right at when you called the website
+	
 
     foreach ($element as $key => $sub_tree)
     {
@@ -84,6 +85,7 @@ function get_time_zone($hour, $minute) // Main function to dom parse
                 $minute_difference =$minute_place -$minute; // find the minute difference
                 // echo $minute_difference."<br>";
 				
+				
                 if ($minute_difference > -10 && $minute_difference < +10) 
 					// compensate for server call less
                     //matches a city's exact time in range of +-15 Minutes
@@ -104,9 +106,17 @@ function get_time_zone($hour, $minute) // Main function to dom parse
                     foreach ($sub_dom_tree as $text) // Parse through the data (Max 4-5 lines)
                     {
                       if (strstr($text, "UTC/GMT")) // if the data contains this yipee we found the timezone
-                        {
-                            $final_time_zone = $text;
-                            return $final_time_zone;
+                        {   
+                           	$final_time_zone =$text;
+							$final_time_zone =(string)$final_time_zone;
+							$final_time_zone =substr($final_time_zone ,-23);
+							$final_time_zone =substr($final_time_zone ,0,6);
+													
+							for($i=0;$i<strlen($final_time_zone);++$i)
+							{ if ($final_time_zone[$i]=="+" || $final_time_zone[$i]=="-")
+								return substr($final_time_zone,$i);
+							}
+							
 						}
 					}
                  break 1;

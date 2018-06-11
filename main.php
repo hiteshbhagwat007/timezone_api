@@ -26,9 +26,9 @@
 	   // $user_time is sent by user to request his time zone according to UTC/GMT 
 	   
 		$user_time=explode(":",$user_time);
-		$user_hour=$user_time[0];		//Hour time of the user 
+		$user_hour=$user_time[0];		
 		// echo $user_hour;
-		$user_minute=$user_time[1];          //Minute time of the user 
+		$user_minute=$user_time[1];        
 		// echo $user_minute;
 		$time_zone = get_time_zone($user_hour,$user_minute);
 		return $time_zone ;                  //  return time zone of the user (String) Ex : UTC/GMT +5:30 
