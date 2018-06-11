@@ -114,7 +114,7 @@ function get_time_zone($hour, $minute) // Main function to dom parse
 													
 							for($i=0;$i<strlen($final_time_zone);++$i)
 							{ if ($final_time_zone[$i]=="+" || $final_time_zone[$i]=="-")
-								return "UTC/GMT".substr($final_time_zone,$i);
+								return "UTC/GMT ".substr($final_time_zone,$i);
 							}
 							
 						}
