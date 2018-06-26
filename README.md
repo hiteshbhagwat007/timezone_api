@@ -1,7 +1,7 @@
 # Timezone Retriever 
 
 **Working Link for example**
-**https://specialdaytodaybot.000webhostapp.com/timezone/example.html**
+https://timezoneret.000webhostapp.com/example.html
 
 Here's how to use it
 
