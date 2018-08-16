@@ -11,7 +11,7 @@ Pass the Time in String format exactly in the form >
 
 **HH:MM (24 hour clock :Seconds not included) !!AM/PM will not work!!
 
-NOTE :Timezone sent is accurate to **+-15** Minutes of the current time passed to the function
+NOTE :Timezone sent is accurate to **+-5** Minutes of the current time passed to the function
 
 Example : Check Example.php for a example.
 
@@ -23,4 +23,4 @@ Made this project coz i didn't find one working like this and we don't even need
 
 **Inline functions are not a trustable method to find timezones and they may return incorrect response **
 
-Took some 12 cups of coffee to make / Buy me some :P https://paypal.me/SudhanshuR
+Took some 12 cups of coffee to make / Buy me some :P https://paypal.me/infinite4evr
