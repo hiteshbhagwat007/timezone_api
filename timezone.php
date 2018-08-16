@@ -2,7 +2,7 @@
 
 /*
 
-Developed by Ashu @ https://https://github.com/infinite4evr
+Written by Ashu @ https://https://github.com/infinite4evr
 Please Contribute to the project if you can
 
 Any structural changes in the site ->
